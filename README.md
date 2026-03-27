@@ -127,5 +127,5 @@ npm run dev
 
 ## 💡 Author
 
-Part of the **Kotarsis** ecosystem —
+Part of the **kotarsis** ecosystem —
 a collection of concept-driven projects combining engineering, design, and interactive storytelling.
