@@ -1,0 +1,110 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.overflow {
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-xxl;
+  padding-inline: s.$space-s;
+  padding-block: s.$space-xxl;
+
+  background: linear-gradient(
+    to bottom,
+    var(--overflow-bg-start),
+    var(--overflow-bg-middle),
+    var(--overflow-bg-end),
+  );
+
+  @include mx.mq(break-768) {
+    padding: s.$space-xxl;
+    padding-block: s.$space-l;
+  }
+
+  &__title {
+    @include tp.overflow-title;
+  }
+
+  &__title div {
+    display: block;
+  }
+
+  &__figures {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-inline: s.$space-l;
+    gap: s.$space-l;
+    cursor: e-resize;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-xxl;
+    }
+  }
+
+  &__figure {
+    background-color: var(--overflow-figure-bg);
+    border: 6px solid var(--overflow-figure-border);
+    height: var(--overflow-figure-dimensions-350);
+    width: var(--overflow-figure-dimensions-350);
+    cursor: e-resize;
+
+    @include mx.mq(break-768) {
+      height: var(--overflow-figure-dimensions-768);
+      width: var(--overflow-figure-dimensions-768);
+    }
+  }
+
+  &__square {
+    @include mx.centered;
+    border-radius: var(--overflow-square-radius);
+    padding-inline: s.$space-s;
+
+    &-text {
+      @include tp.overflow-figure-square;
+    }
+  }
+
+  &__triangle {
+    @include mx.centered;
+    position: relative;
+    background: none;
+    flex-direction: column;
+    justify-content: end;
+    padding-inline: s.$space-l;
+    border: none;
+
+    width: 300px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+    &-icon {
+      position: absolute;
+      width: 95%;
+      height: 95%;
+      z-index: 1;
+    }
+    &-text {
+      @include tp.overflow-figure-triangle;
+      // display: none;
+      z-index: 5;
+    }
+  }
+
+  &__circle {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: s.$space-xs;
+    padding-inline: s.$space-l;
+    text-align: left;
+    border-radius: var(--overflow-circle-radius);
+    &-text {
+      @include tp.overflow-figure-circle;
+    }
+  }
+
+  &__text-visible {
+    white-space: nowrap;
+  }
+}

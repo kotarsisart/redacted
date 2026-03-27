@@ -1,0 +1,53 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --preloader-kotarsis-350: 60px;
+  --preloader-kotarsis-768: 100px;
+
+  --preloader-presents-350: 32px;
+  --preloader-presents-768: 40px;
+
+  --preloader-project-350: 28px;
+  --preloader-project-768: 48px;
+  --preloader-project-1280: 60px;
+}
+
+@mixin preloader-kotarsis {
+  font-size: var(--preloader-kotarsis-350);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+  line-height: var(--line-height-light);
+  font-display: optional;
+  color: var(--preloader-text);
+
+  @include mx.mq(break-768) {
+    font-size: var(--preloader-kotarsis-768);
+  }
+}
+
+@mixin preloader-presents {
+  font-size: var(--preloader-presents-350);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.15em;
+  color: var(--preloader-text);
+
+  @include mx.mq(break-768) {
+    font-size: var(--preloader-presents-768);
+  }
+}
+
+@mixin preloader-project {
+  font-size: var(--preloader-project-350);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-light);
+
+  @include mx.mq(break-768) {
+    font-size: var(--preloader-project-768);
+  }
+
+  @include mx.mq(break-1280) {
+    font-size: var(--preloader-project-1280);
+  }
+}

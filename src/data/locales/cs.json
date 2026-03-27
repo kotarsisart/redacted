@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "Redacted — Tuto chybu nelze opravit",
+    "description": "Digitální zkušenost o ztrátě kontroly. Tlač silněji. Klikni rychleji. Zkus to znovu. Redacted zkoumá emocionální chaos za jednoduchou systémovou chybou.",
+    "keywords": "redacted, chyba, přijetí, popření, hněv, kotarsis",
+    "siteName": "Redacted"
+  },
+
+  "entry": {
+    "title": "Ups, něco se pokazilo.",
+    "subline": "Takto to začít nemělo.",
+    "paragraph": "Když už jsi tady — možná to dokážeš opravit.",
+    "button": "Pokračovat"
+  },
+
+  "contrast": {
+    "title": "Stránka vypadá nesprávně",
+    "text": "Zkus upravit kontrast",
+    "button": "Dále"
+  },
+
+  "focus": {
+    "title": "Ups. Naše tlačítko main zmizelo",
+    "subline": "Vyber, které ho nahradí",
+    "button": "main"
+  },
+
+  "clarity": {
+    "phrase": "Vše pod kontrolou",
+    "hint": "DRŽ REALITU",
+    "subHint": "(stiskni a drž)"
+  },
+
+  "ship": {
+    "text": "Stačí",
+    "cupHintAlt": "cílová pozice",
+    "cupMoveAlt": "pohyblivý hrnek"
+  },
+
+  "header": {
+    "logo": {
+      "projectAlt": "Logo projektu Redacted",
+      "kotarsisAlt": "logo kotarsis",
+      "languageIconAlt": "Vybrat jazyk"
+    }
+  },
+
+  "hero": {
+    "projectAlt": "Symbol projektu Redacted",
+    "title": "Redacted?",
+    "subline": "Očekávaná chyba.",
+    "button": {
+      "default": "přijmout",
+      "hover": "přijmout?",
+      "accepted": "přijato"
+    },
+    "errors": [
+      "CHYBA — TO NENÍ SELHÁNÍ",
+      "CHYBA — TO JE INFORMACE",
+      "CHYBA — TO JE KROK"
+    ]
+  },
+
+  "denial": {
+    "title": "Vše v pořádku",
+    "checks": [
+      {
+        "id": "system",
+        "title": "kontrola systému",
+        "result": "Systém běží"
+      },
+      {
+        "id": "issues",
+        "title": "kontrola chyb",
+        "result": "Nebyla zjištěna kritická chyba"
+      },
+      {
+        "id": "loading",
+        "title": "kontrola načítání",
+        "result": "Načítání stabilní"
+      }
+    ],
+    "outro": "Kontrola OK.\n(1 varování ignorováno)"
+  },
+
+  "anger": {
+    "title": "PŘEVEZMI KONTROLU",
+    "subline": "Oprav vše. Víš jak.",
+    "button": "FIX ERROR",
+    "states": {
+      "first": "OPRAV TO TEĎ!",
+      "second": "Vše v pořádku",
+      "third": "A co to přináší?",
+      "fourth": "To není oprava.\nTo je hněv."
+    }
+  },
+
+  "bargaining": {
+    "title": "Skoro funguje",
+    "subline": "A co když existuje bezpečný způsob?",
+    "select": "Vyber to, co může pomoci.",
+    "press": "Stiskni apply, pokud si myslíš, že to něco změní.",
+    "button": "apply changes",
+    "loading": "Použití vybraných možností…",
+    "processing": "zpracování…",
+    "options": {
+      "enableFallback": "povolit fallback",
+      "reduceLoad": "snížit zátěž",
+      "safeMode": "bezpečný režim",
+      "retryGently": "zkusit opatrně"
+    }
+  },
+
+  "overflow": {
+    "title": [
+      "Opravdu je nutné se vždy",
+      "snažit mít všechno pod kontrolou?"
+    ],
+    "square": "Tak moc chceme být dokonalí.",
+    "triangle": [
+      "Stlačujeme se,",
+      "jak to jde,",
+      "i když",
+      "je to nepohodlné",
+      "˚"
+    ],
+    "circle": [
+      "Ale nejde někdy",
+      "prostě jít za hranice?"
+    ]
+  },
+
+  "depression": {
+    "title": "Žádná odpověď",
+    "text1": "žádná odpověď",
+    "text2": "nemusíš čekat",
+    "text3": "pořád stejné",
+    "text4": "to nic nemění",
+    "text5": "na tom nezáleží",
+    "text6": "žádný rozdíl",
+    "text7": "nikam to nevede",
+    "text8": "nic se nemění",
+    "text9": "bez efektu",
+    "apply": "apply changes",
+    "anger": "FIX ERROR"
+  },
+
+  "acceptance": {
+    "title": "Stále funkční",
+    "factsLeft": [
+      "Je to přijatelné",
+      "Stále funguje"
+    ],
+    "factsRight": [
+      "Některé chyby zůstaly",
+      "Další kroky nejsou nutné"
+    ],
+    "note": [
+      "Tento projekt se rozbil víc než jednou.",
+      "Nefungoval podle plánu.",
+      "A o to šlo."
+    ],
+    "conclusion": {
+      "crossed": "Opravit neznamená odstranit.",
+      "underline": "Opravit znamená integrovat."
+    },
+    "restart": "Vždy se můžeš vrátit na začátek. Nic není konečné"
+  },
+
+  "footer": {
+    "title": "Konec logu.",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podpoř nedokonalost",
+    "custom": "Objednat vlastní web",
+    "copyright": "© 2026 Redacted. Navrženo kolem chyby.",
+    "coffeeAlt": "hrnek Redacted"
+  }
+}

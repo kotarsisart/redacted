@@ -1,0 +1,126 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.acceptance {
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-xl;
+  padding-inline: s.$space-l;
+  padding-block: s.$space-xxl;
+
+  background: linear-gradient(
+    to bottom,
+    var(--acceptance-bg-start),
+    var(--acceptance-bg-middle),
+    var(--acceptance-bg-end),
+  );
+
+  @include mx.mq(break-768) {
+    gap: s.$space-xl;
+    padding: s.$space-l;
+  }
+
+  &__title {
+    @include tp.h2;
+  }
+
+  &__facts {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+    gap: s.$space-l;
+    
+    @include mx.mq(break-768) {
+      gap: s.$space-xl;
+    }
+
+    @include mx.mq(break-1024) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      max-width: var(--acceptance-errors-max-width);
+    }
+
+    &-left, &-right {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      text-align: left;
+      gap: s.$space-l;
+      
+      @include mx.mq(break-768) {
+        gap: s.$space-xl;
+      }
+      @include mx.mq(break-1024) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__fact {
+    @include tp.acceptance-facts;
+  }
+
+  &__project {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-l;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-xxl;
+    }
+  }
+
+  &__note {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+    gap: s.$space-m;
+    padding-inline: s.$space-m;
+    padding-block: s.$space-s;
+
+    border-radius: var(--acceptance-note-radius);
+    background-color: var(--acceptance-note-bg);
+    border: 3px solid var(--acceptance-note-border);
+
+    max-width: 400px;
+
+    @include mx.mq(break-768) {
+      max-width: 100%;
+    }
+
+    &-text {
+      @include tp.acceptance-note;
+    }
+  }
+
+  &__conclusion {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-l;
+
+    &-text {
+      @include tp.acceptance-fixing;
+    }
+
+    &-crossed {
+      text-decoration: line-through;
+      color: var(--acceptance-removing);
+    }
+
+    &-underline {
+      text-decoration: underline;
+      color: var(--acceptance-integrating);
+    }
+  }
+
+  &__restart {
+    @include tp.acceptance-restart;
+  }
+}

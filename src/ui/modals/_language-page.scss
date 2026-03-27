@@ -1,0 +1,184 @@
+@use '../styles/system/mixins' as mx;
+@use '../styles/tokens/spacing' as s;
+@use '../styles/typography/index' as tp;
+
+.lang-select {
+  background-color: var(--lang-page-bg);
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  color: var(--lang-page-text);
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: s.$space-xl;
+
+    padding-inline: s.$space-s;
+    padding-block: s.$space-l;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    animation: fadeLangEnter 0.35s ease forwards;
+
+    @include mx.mq(break-360) {
+      padding-inline: s.$space-m;
+      padding-block: s.$space-xl;
+    }
+    @include mx.mq(break-390) {
+      padding-inline: s.$space-l;
+    }
+    @include mx.mq(break-430) {
+      padding-inline: 32px;
+    }
+    @include mx.mq(break-834) {
+      padding: s.$space-xl;
+    }
+    @include mx.mq(break-1024) {
+      padding-inline: s.$space-xxl;
+    }
+    @include mx.mq(break-1280) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      padding: s.$space-xl;
+    }
+    @include mx.mq(break-1440) {
+      padding: s.$space-xxl;
+    }
+  }
+
+  &__close {
+    @include tp.lang-page-close;
+    position: absolute;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    right: 16px;
+    top: 24px;
+
+    @include mx.mq(break-360) {
+      top: 32px
+    }
+    @include mx.mq(break-390) {
+      right: 32px
+    }
+    
+    &:hover {
+      transform: scale(1.1);
+      text-shadow: var(--shadow-lang-page-close);
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: s.$space-s;
+
+    &-title {
+      @include tp.lang-page-geography;
+    }
+  }
+
+  &__subgroups {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    gap: s.$space-m;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-xl;
+    }
+  }
+  
+  &__subgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: s.$space-m;
+    padding: s.$space-xs;
+
+    &-title {
+      @include tp.lang-page-internal;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    @include mx.centered;
+    flex-direction: row;
+    gap: s.$space-s;
+    padding: s.$space-xs;
+    cursor: pointer;
+
+    &.is-disabled {
+      opacity: 0.5;
+      filter: grayscale(50%);
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+
+  &__name {
+    @include tp.lang-page-lang;
+    border-bottom: 2px solid var(--lang-page-bg);
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-bottom-color: var(--lang-page-text);
+    }
+  }
+
+  &__flag {
+    width: 50px;
+    height: 33px;
+  }
+}
+
+@keyframes fadeLangEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lang-select.is-leaving .lang-select__inner {
+  animation: fadeLangLeave 0.35s ease forwards;
+}
+
+@keyframes fadeLangLeave {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}

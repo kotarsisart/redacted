@@ -1,0 +1,35 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --contrast-subline-350: 18px;
+  --contrast-subline-390: 22px;
+  --contrast-subline-768: 36px;
+
+  --contrast-button-350: 20px;
+  --contrast-button-768: 24px;
+}
+
+@mixin contrast-subline {
+  font-size: var(--contrast-subline-350);
+  font-weight: var(--font-weight-semibold);
+  color: var(--contrast-subline);
+
+  @include mx.mq(break-390) {
+    font-size: var(--contrast-subline-390);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--contrast-subline-768);
+  }
+}
+
+@mixin contrast-button {
+  font-size: var(--contrast-button-350);
+  font-weight: var(--font-weight-bold);
+  color: var(--snow-text);
+
+  @include mx.mq(break-768) {
+    font-size: var(--contrast-button-768);
+  }
+}

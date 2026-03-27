@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "Redacted — Túto chybu nemožno opraviť",
+    "description": "Digitálna skúsenosť o strate kontroly. Stláčaj silnejšie. Klikaj rýchlejšie. Skús znova. Redacted skúma emocionálny chaos za jednoduchou systémovou chybou.",
+    "keywords": "redacted, chyba, prijatie, popretie, hnev, kotarsis",
+    "siteName": "Redacted"
+  },
+
+  "entry": {
+    "title": "Ups, niečo sa pokazilo.",
+    "subline": "Takto sa to nemalo začať.",
+    "paragraph": "Keď už si tu — možno to dokážeš opraviť.",
+    "button": "Pokračovať"
+  },
+
+  "contrast": {
+    "title": "Stránka vyzerá nesprávne",
+    "text": "Skús upraviť kontrast",
+    "button": "Ďalej"
+  },
+
+  "focus": {
+    "title": "Ups. Naše tlačidlo main zmizlo",
+    "subline": "Vyber, ktoré ho nahradí",
+    "button": "main"
+  },
+
+  "clarity": {
+    "phrase": "Všetko pod kontrolou",
+    "hint": "DRŽ REALITU",
+    "subHint": "(stlač a drž)"
+  },
+
+  "ship": {
+    "text": "Stačí",
+    "cupHintAlt": "cieľová pozícia",
+    "cupMoveAlt": "pohyblivý hrnček"
+  },
+
+  "header": {
+    "logo": {
+      "projectAlt": "Logo projektu Redacted",
+      "kotarsisAlt": "logo kotarsis",
+      "languageIconAlt": "Vybrať jazyk"
+    }
+  },
+
+  "hero": {
+    "projectAlt": "Symbol projektu Redacted",
+    "title": "Redacted?",
+    "subline": "Očakávaná chyba.",
+    "button": {
+      "default": "prijať",
+      "hover": "prijať?",
+      "accepted": "prijaté"
+    },
+    "errors": [
+      "CHYBA — TO NIE JE ZLYHANIE",
+      "CHYBA — TO JE INFORMÁCIA",
+      "CHYBA — TO JE KROK"
+    ]
+  },
+
+  "denial": {
+    "title": "Všetko v poriadku",
+    "checks": [
+      {
+        "id": "system",
+        "title": "kontrola systému",
+        "result": "Systém beží"
+      },
+      {
+        "id": "issues",
+        "title": "kontrola chýb",
+        "result": "Neboli zistené kritické chyby"
+      },
+      {
+        "id": "loading",
+        "title": "kontrola načítania",
+        "result": "Načítanie stabilné"
+      }
+    ],
+    "outro": "Kontrola OK.\n(1 upozornenie ignorované)"
+  },
+
+  "anger": {
+    "title": "PREVEZMI KONTROLU",
+    "subline": "Oprav všetko. Vieš ako.",
+    "button": "FIX ERROR",
+    "states": {
+      "first": "OPRAV TO TERAZ!",
+      "second": "Všetko v poriadku",
+      "third": "A čo to prináša?",
+      "fourth": "To nie je oprava.\nTo je hnev."
+    }
+  },
+
+  "bargaining": {
+    "title": "Takmer funguje",
+    "subline": "A čo ak existuje bezpečný spôsob?",
+    "select": "Vyber to, čo môže pomôcť.",
+    "press": "Stlač apply, ak si myslíš, že to niečo zmení.",
+    "button": "apply changes",
+    "loading": "Použitie vybraných možností…",
+    "processing": "spracovanie…",
+    "options": {
+      "enableFallback": "povoliť fallback",
+      "reduceLoad": "znížiť zaťaženie",
+      "safeMode": "bezpečný režim",
+      "retryGently": "skúsiť opatrne"
+    }
+  },
+
+  "overflow": {
+    "title": [
+      "Naozaj musíš stále skúšať",
+      "držať všetko pod kontrolou?"
+    ],
+    "square": "Tak veľmi chceme byť dokonalí.",
+    "triangle": [
+      "Stláčame sa,",
+      "ako sa dá,",
+      "aj keď",
+      "je to nepohodlné",
+      "˚"
+    ],
+    "circle": [
+      "Ale nedá sa niekedy",
+      "len tak ísť za hranice?"
+    ]
+  },
+
+  "depression": {
+    "title": "Žiadna odpoveď",
+    "text1": "žiadna odpoveď",
+    "text2": "nemusíš čakať",
+    "text3": "stále to isté",
+    "text4": "to nič nemení",
+    "text5": "na tom nezáleží",
+    "text6": "žiadny rozdiel",
+    "text7": "nikam to nevedie",
+    "text8": "nič sa nemení",
+    "text9": "bez efektu",
+    "apply": "apply changes",
+    "anger": "FIX ERROR"
+  },
+
+  "acceptance": {
+    "title": "Stále funkčné",
+    "factsLeft": [
+      "Je to prijateľné",
+      "Stále funguje"
+    ],
+    "factsRight": [
+      "Niektoré chyby zostali",
+      "Ďalšie kroky nie sú potrebné"
+    ],
+    "note": [
+      "Tento projekt sa pokazil viac než raz.",
+      "Nefungoval podľa plánu.",
+      "A o to išlo."
+    ],
+    "conclusion": {
+      "crossed": "Opraviť neznamená odstrániť.",
+      "underline": "Opraviť znamená integrovať."
+    },
+    "restart": "Vždy sa môžeš vrátiť na začiatok. Nič nie je konečné"
+  },
+
+  "footer": {
+    "title": "Koniec logu.",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podpor nedokonalosť",
+    "custom": "Objednať vlastnú stránku",
+    "copyright": "© 2026 Redacted. Navrhnuté okolo chyby.",
+    "coffeeAlt": "hrnček Redacted"
+  }
+}

@@ -1,0 +1,45 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --h1-crash-350: 32px;
+  --h1-crash-390: 40px;
+  --h1-crash-768: 62px;
+  --h1-crash-1280: 76px;
+
+  --h2-crash-350: 24px;
+  --h2-crash-390: 28px;
+  --h2-crash-768: 46px;
+  --h2-crash-1280: 60px;
+}
+
+@mixin h1-crash {
+  font-size: var(--h1-crash-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-390) {
+    font-size: var(--h1-crash-390);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--h1-crash-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--h1-crash-1280);
+  }
+}
+
+@mixin h2-crash {
+  font-size: var(--h2-crash-350);
+  font-weight: var(--font-weight-bold);
+  
+  @include mx.mq(break-390) {
+    font-size: var(--h2-crash-390);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--h2-crash-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--h2-crash-1280);
+  }
+}

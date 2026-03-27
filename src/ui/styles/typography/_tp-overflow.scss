@@ -1,0 +1,55 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --overflow-title-350: 20px;
+  --overflow-title-768: 32px;
+
+  --overflow-figure-square-350: 18px;
+  --overflow-figure-square-768: 24px;
+  
+  --overflow-figure-triangle-350: 15px;
+  --overflow-figure-triangle-768: 18px;
+
+  --overflow-figure-circle-350: 16px;
+  --overflow-figure-circle-768: 20px;
+}
+
+@mixin overflow-title {
+  font-size: var(--overflow-title-350);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--overflow-title);
+  text-shadow: var(--shadow-section-title);
+
+  @include mx.mq(break-768) {
+    font-size: var(--overflow-title-768);
+  }
+}
+
+@mixin overflow-figure-square {
+  font-size: var(--overflow-figure-square-350);
+
+  @include mx.mq(break-768) {
+    font-size: var(--overflow-figure-square-768);
+  }
+}
+
+@mixin overflow-figure-triangle {
+  font-size: var(--overflow-figure-triangle-350);
+  line-height: var(--line-height-light);
+
+  @include mx.mq(break-768) {
+    font-size: var(--overflow-figure-triangle-768);
+  }
+}
+
+@mixin overflow-figure-circle {
+  font-size: var(--overflow-figure-circle-350);
+  font-weight: var(--font-weight-bold);
+  line-height: 120%;
+
+  @include mx.mq(break-768) {
+    font-size: var(--overflow-figure-circle-768);
+  }
+}

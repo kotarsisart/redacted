@@ -1,0 +1,49 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --entry-subline-350: 22px;
+  --entry-subline-390: 26px;
+  --entry-subline-768: 40px;
+
+  --entry-text-350: 18px;
+  --entry-text-390: 22px;
+  --entry-text-768: 32px;
+
+  --entry-button-350: 18px;
+  --entry-button-768: 24px;
+}
+
+@mixin entry-subline {
+  font-size: var(--entry-subline-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-390) {
+    font-size: var(--entry-subline-390);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--entry-subline-768);
+  }
+}
+
+@mixin entry-text {
+  font-size: var(--entry-text-350);
+  font-weight: var(--font-weight-medium);
+
+  @include mx.mq(break-390) {
+    font-size: var(--entry-text-390);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--entry-text-768);
+  }
+}
+
+@mixin entry-button {
+  font-size: var(--entry-button-350);
+  font-weight: var(--font-weight-medium);
+
+  @include mx.mq(break-768) {
+    font-size: var(--entry-button-768);
+  }
+}

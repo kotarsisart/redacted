@@ -1,0 +1,78 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg);
+
+
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+
+  padding-inline: s.$space-s;
+  padding-block: s.$space-s;
+  height: 60px;
+  
+  @include mx.mq(break-768) { 
+    padding-inline: s.$space-xl;
+    height: 75px;
+  }
+  @include mx.mq(break-1024) { 
+    padding-inline: s.$space-xxl;
+  }
+
+  &-logo__link {
+    @include mx.centered;
+    flex-direction: row;
+    gap: s.$space-s;
+    padding-left: s.$space-s;
+    height: 100%;
+ 
+    @include mx.mq(break-768) {
+      padding-inline: s.$space-m;
+      border-radius: 12px;
+      background-color: var(--header-containers);
+    }
+  }
+
+  &__lang-select {
+    @include mx.centered;
+    flex-direction: row;
+    gap: s.$space-s;
+    padding: s.$space-s;
+    height: 100%;
+    cursor: pointer;
+    
+    &:hover .header__lang-select-icon {
+      transform: rotate(360deg);
+    }
+
+    @include mx.mq(break-768) {
+      padding-inline: s.$space-m;
+      border-radius: 12px;
+      background-color: var(--header-containers);
+    }
+
+    &-text {
+      @include tp.header-lang-select;
+    }
+
+    &-icon {
+      display: none;
+      width: 40px;
+      transition: transform 1s ease;
+      transform-origin: center;
+
+      @include mx.mq(break-768) {
+        display: flex;
+        width: 45px; 
+      }
+    }
+  }
+}

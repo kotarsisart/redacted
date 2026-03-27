@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "Redacted — Te napake ni mogoče popraviti",
+    "description": "Digitalna izkušnja o izgubi nadzora. Pritisni močneje. Klikni hitreje. Poskusi znova. Redacted raziskuje čustveni kaos za preprosto sistemsko napako.",
+    "keywords": "redacted, napaka, sprejemanje, zanikanje, jeza, kotarsis",
+    "siteName": "Redacted"
+  },
+
+  "entry": {
+    "title": "Ups, nekaj je šlo narobe.",
+    "subline": "Tako se ne bi smelo začeti.",
+    "paragraph": "Ker si že tukaj — morda lahko pomagaš to popraviti.",
+    "button": "Nadaljuj"
+  },
+
+  "contrast": {
+    "title": "Stran izgleda napačno",
+    "text": "Poskusi prilagoditi kontrast",
+    "button": "Naprej"
+  },
+
+  "focus": {
+    "title": "Ups. Naš gumb main je izginil",
+    "subline": "Izberi, kateri ga bo nadomestil",
+    "button": "main"
+  },
+
+  "clarity": {
+    "phrase": "Vse je pod nadzorom",
+    "hint": "DRŽI REALNOST",
+    "subHint": "(pritisni in zadrži)"
+  },
+
+  "ship": {
+    "text": "Bo že",
+    "cupHintAlt": "ciljna pozicija",
+    "cupMoveAlt": "premikajoča skodelica"
+  },
+
+  "header": {
+    "logo": {
+      "projectAlt": "Logotip projekta Redacted",
+      "kotarsisAlt": "logotip kotarsis",
+      "languageIconAlt": "Izberi jezik"
+    }
+  },
+
+  "hero": {
+    "projectAlt": "Simbol projekta Redacted",
+    "title": "Redacted?",
+    "subline": "Pričakovana napaka.",
+    "button": {
+      "default": "sprejmi",
+      "hover": "sprejmi?",
+      "accepted": "sprejeto"
+    },
+    "errors": [
+      "NAPAKA — NI PORAZ",
+      "NAPAKA — JE INFORMACIJA",
+      "NAPAKA — JE KORAK"
+    ]
+  },
+
+  "denial": {
+    "title": "Vse je v redu",
+    "checks": [
+      {
+        "id": "system",
+        "title": "preverjanje sistema",
+        "result": "Sistem deluje"
+      },
+      {
+        "id": "issues",
+        "title": "preverjanje napak",
+        "result": "Ni kritičnih težav"
+      },
+      {
+        "id": "loading",
+        "title": "preverjanje nalaganja",
+        "result": "Nalaganje stabilno"
+      }
+    ],
+    "outro": "Status OK.\n(1 opozorilo prezrto)"
+  },
+
+  "anger": {
+    "title": "PREVZEMI NADZOR",
+    "subline": "Popravi vse. Veš kako.",
+    "button": "FIX ERROR",
+    "states": {
+      "first": "POPRAVI ZDAJ!",
+      "second": "Vse je v redu",
+      "third": "In kaj ti to prinese?",
+      "fourth": "To ni popravljanje.\nTo je jeza."
+    }
+  },
+
+  "bargaining": {
+    "title": "Skoraj deluje",
+    "subline": "Kaj če obstaja varen način?",
+    "select": "Izberi tisto, kar misliš, da lahko pomaga.",
+    "press": "Pritisni apply, če misliš, da bo kaj spremenilo.",
+    "button": "apply changes",
+    "loading": "Uporaba izbranih možnosti…",
+    "processing": "obdelava…",
+    "options": {
+      "enableFallback": "omogoči fallback",
+      "reduceLoad": "zmanjšaj obremenitev",
+      "safeMode": "varen način",
+      "retryGently": "poskusi previdno"
+    }
+  },
+
+  "overflow": {
+    "title": [
+      "Ali res vedno moraš",
+      "poskušati imeti vse pod nadzorom?"
+    ],
+    "square": "Tako zelo želimo biti popolni.",
+    "triangle": [
+      "Stiskamo se,",
+      "kolikor zmoremo,",
+      "tudi ko",
+      "je neprijetno",
+      "˚"
+    ],
+    "circle": [
+      "Ali ne moreš včasih",
+      "preprosto iti čez meje?"
+    ]
+  },
+
+  "depression": {
+    "title": "Ni odgovora",
+    "text1": "ni odgovora",
+    "text2": "ni ti treba čakati",
+    "text3": "vse je enako",
+    "text4": "nič se ne spremeni",
+    "text5": "ni pomembno",
+    "text6": "brez razlike",
+    "text7": "nikamor ne vodi",
+    "text8": "nič se ne spremeni",
+    "text9": "brez učinka",
+    "apply": "apply changes",
+    "anger": "FIX ERROR"
+  },
+
+  "acceptance": {
+    "title": "Še vedno deluje",
+    "factsLeft": [
+      "To je sprejemljivo",
+      "Še vedno deluje"
+    ],
+    "factsRight": [
+      "Nekatere napake ostajajo",
+      "Dodatni koraki niso potrebni"
+    ],
+    "note": [
+      "Ta projekt se je pokvaril večkrat.",
+      "Ni deloval, kot je bilo načrtovano.",
+      "V tem je bil smisel."
+    ],
+    "conclusion": {
+      "crossed": "Popraviti ne pomeni odstraniti.",
+      "underline": "Popraviti pomeni integrirati."
+    },
+    "restart": "Vedno se lahko vrneš na začetek. Nič ni dokončno"
+  },
+
+  "footer": {
+    "title": "Konec zapisa.",
+    "author": "Avtor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Podpri nepopolnost",
+    "custom": "Naroči lastno spletno stran",
+    "copyright": "© 2026 Redacted. Oblikovano okoli napake.",
+    "coffeeAlt": "skodelica Redacted"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "title": "Redacted — Tego błędu nie da się naprawić",
+    "description": "Cyfrowe doświadczenie o utracie kontroli. Naciskaj mocniej. Klikaj szybciej. Spróbuj ponownie. Redacted bada emocjonalny chaos ukryty za prostym błędem systemowym.",
+    "keywords": "redacted, błąd, akceptacja, zaprzeczenie, gniew, kotarsis",
+    "siteName": "Redacted"
+  },
+
+  "entry": {
+    "title": "Ups, coś poszło nie tak.",
+    "subline": "To nie tak miało się zacząć.",
+    "paragraph": "Skoro już tu jesteś — może pomożesz to naprawić.",
+    "button": "Kontynuuj"
+  },
+
+  "contrast": {
+    "title": "Strona wygląda nieprawidłowo",
+    "text": "Spróbuj poprawić kontrast",
+    "button": "Dalej"
+  },
+
+  "focus": {
+    "title": "Ups. Nasz przycisk main zniknął",
+    "subline": "Wybierz, który ma go zastąpić",
+    "button": "main"
+  },
+
+  "clarity": {
+    "phrase": "Wszystko pod kontrolą",
+    "hint": "TRZYMAJ RZECZYWISTOŚĆ",
+    "subHint": "(naciśnij i przytrzymaj)"
+  },
+
+  "ship": {
+    "text": "Ujdzie",
+    "cupHintAlt": "pozycja docelowa",
+    "cupMoveAlt": "ruchomy kubek"
+  },
+
+  "header": {
+    "logo": {
+      "projectAlt": "Logo projektu Redacted",
+      "kotarsisAlt": "logo kotarsis",
+      "languageIconAlt": "Wybierz język"
+    }
+  },
+
+  "hero": {
+    "projectAlt": "Symbol projektu Redacted",
+    "title": "Redacted?",
+    "subline": "Oczekiwany błąd.",
+    "button": {
+      "default": "zaakceptuj",
+      "hover": "zaakceptuj?",
+      "accepted": "zaakceptowano"
+    },
+    "errors": [
+      "BŁĄD — TO NIE PORAŻKA",
+      "BŁĄD — TO INFORMACJA",
+      "BŁĄD — TO KROK"
+    ]
+  },
+
+  "denial": {
+    "title": "Wszystko w porządku",
+    "checks": [
+      {
+        "id": "system",
+        "title": "sprawdzenie systemu",
+        "result": "System działa"
+      },
+      {
+        "id": "issues",
+        "title": "sprawdzenie błędów",
+        "result": "Nie wykryto krytycznych problemów"
+      },
+      {
+        "id": "loading",
+        "title": "sprawdzenie ładowania",
+        "result": "Ładowanie stabilne"
+      }
+    ],
+    "outro": "Status OK.\n(1 ostrzeżenie zignorowane)"
+  },
+
+  "anger": {
+    "title": "PRZEJMIJ KONTROLĘ",
+    "subline": "Napraw wszystko. Wiesz jak.",
+    "button": "FIX ERROR",
+    "states": {
+      "first": "NAPRAW TERAZ!",
+      "second": "Wszystko w porządku",
+      "third": "I co to daje?",
+      "fourth": "To nie jest naprawa.\nTo gniew."
+    }
+  },
+
+  "bargaining": {
+    "title": "Prawie działa",
+    "subline": "A jeśli istnieje bezpieczny sposób?",
+    "select": "Wybierz to, co może pomóc.",
+    "press": "Naciśnij apply, jeśli myślisz, że to coś zmieni.",
+    "button": "apply changes",
+    "loading": "Zastosowanie wybranych opcji…",
+    "processing": "przetwarzanie…",
+    "options": {
+      "enableFallback": "włącz fallback",
+      "reduceLoad": "zmniejsz obciążenie",
+      "safeMode": "tryb bezpieczny",
+      "retryGently": "spróbuj ostrożnie"
+    }
+  },
+
+  "overflow": {
+    "title": [
+      "Czy naprawdę zawsze trzeba",
+      "próbować mieć wszystko pod kontrolą?"
+       
+    ],
+    "square": "Tak bardzo chcemy być idealni.",
+    "triangle": [
+      "Ściskamy się,",
+      "jak potrafimy,",
+      "nawet jeśli",
+      "to niewygodne",
+      "˚"
+    ],
+    "circle": [
+      "Ale dlaczego czasami",
+      "nie przekroczyć granic?"
+    ]
+  },
+
+  "depression": {
+    "title": "Brak odpowiedzi",
+    "text1": "brak odpowiedzi",
+    "text2": "nie musisz czekać",
+    "text3": "wciąż to samo",
+    "text4": "to nic nie zmienia",
+    "text5": "to nie ma znaczenia",
+    "text6": "żadnej różnicy",
+    "text7": "to donikąd nie prowadzi",
+    "text8": "nic się nie zmienia",
+    "text9": "bez efektu",
+    "apply": "apply changes",
+    "anger": "FIX ERROR"
+  },
+
+  "acceptance": {
+    "title": "Wciąż działa",
+    "factsLeft": [
+      "To akceptowalne",
+      "Wciąż działa"
+    ],
+    "factsRight": [
+      "Niektóre błędy pozostały",
+      "Dalsze działania nie są wymagane"
+    ],
+    "note": [
+      "Ten projekt psuł się nie raz.",
+      "Nie działał tak, jak planowano.",
+      "W tym tkwił sens."
+    ],
+    "conclusion": {
+      "crossed": "Naprawić — to nie usunąć.",
+      "underline": "Naprawić — to zintegrować."
+    },
+    "restart": "Zawsze możesz wrócić na początek. Nic nie jest ostateczne"
+  },
+
+  "footer": {
+    "title": "Koniec logu.",
+    "author": "Autor: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Wesprzyj niedoskonałość",
+    "custom": "Zamów własną stronę",
+    "copyright": "© 2026 Redacted. Zaprojektowane wokół błędu.",
+    "coffeeAlt": "kubek Redacted"
+  }
+}

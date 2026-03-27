@@ -1,0 +1,149 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.depression {
+  @include mx.centered;
+  text-align: left;
+  flex-direction: column;
+  gap: s.$space-s;
+  padding-inline: s.$space-m;
+  padding-block: s.$space-l;
+  cursor: default;
+
+  background: linear-gradient(
+    to bottom,
+    var(--depression-bg-start),
+    var(--depression-bg-middle),
+    var(--depression-bg-end)
+  );
+
+  @include mx.mq(break-768) {
+    gap: s.$space-l;
+    padding-block: s.$space-xl;
+    padding-inline: s.$space-xxl;
+  }
+
+  &__title {
+    @include tp.h2;
+  }
+
+  &__text {
+    @include tp.depression-responses;
+  }
+
+  // about responses
+  &-element {
+    opacity: 0;
+    transition: opacity 1.2s ease;
+    pointer-events: none;
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+
+  &__first-container {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-m;
+
+    @include mx.mq(break-768) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-inline: s.$space-xxxl;
+    }
+  }
+
+  &__second-container {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: s.$space-xl;
+  }
+
+  &__third-container {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: s.$space-m;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-xl;
+    }
+  }
+
+  &__fourth-container {
+    @include mx.centered;
+  }
+
+  &__fifth-container {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: s.$space-s;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-l;
+    }
+  }
+
+  &__sixth-container {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: s.$space-l;
+  }
+
+  &__circle {
+    height: var(--depression-circle-dimensions-350);
+    width: var(--depression-circle-dimensions-350);
+    background-color: var(--overflow-figure-bg);
+    border: 3px solid var(--overflow-figure-border);
+    border-radius: var(--overflow-circle-radius);
+
+    @include mx.mq(break-768) {
+      height: var(--depression-circle-dimensions-768);
+      width: var(--depression-circle-dimensions-768);
+    }
+  }
+
+  &__square {
+    height: var(--depression-square-dimensions-350);
+    width: var(--depression-square-dimensions-350);
+    background-color: var(--overflow-figure-bg);
+    border: 3px solid var(--overflow-figure-border);
+    border-radius: var(--overflow-square-radius);
+
+    @include mx.mq(break-768) {
+      height: var(--depression-square-dimensions-768);
+      width: var(--depression-square-dimensions-768);
+    }
+  }
+
+  &__apply {
+    background-color: var(--bargaining-button-default-bg);
+    padding-inline: s.$space-l;
+    padding-block: s.$space-m;
+    border-radius: var(--bargaining-button-radius);
+
+    &-text {
+      @include tp.bargaining-button;
+    }
+  }
+
+  &__anger {
+    background: linear-gradient(
+      to bottom,
+      var(--anger-button-bg-start),
+      var(--anger-button-bg-end),
+    );
+    padding: 12px;
+    border-radius: var(--main-radius);
+
+    &-text {
+      @include tp.anger-button;
+    }
+  }
+}

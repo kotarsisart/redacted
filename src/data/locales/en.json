@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "title": "Redacted — You Cannot Fix This Error",
+    "description": "Digital experience about losing control. Press harder. Click faster. Try again. Redacted explores the emotional chaos behind a simple system error.",
+    "keywords": "redacted, error, acceptance, denial, anger, kotarsis",
+    "siteName": "Redacted"
+  },
+
+  "entry": {
+    "title": "Oops, something went wrong.",
+    "subline": "This isn’t how it was supposed to start.",
+    "paragraph": "But since you’re here — maybe you can help us fix it.",
+    "button": "Proceed anyway"
+  },
+
+  "contrast": {
+    "title": "The page looks wrong",
+    "text": "Try to fix the contrast",
+    "button": "Continue"
+  },
+
+  "focus": {
+    "title": "Oops. Our main button is gone",
+    "subline": "Choose which one should replace it",
+    "button": "main"
+  },
+
+  "clarity": {
+    "phrase": "Everything is under control",
+    "hint": "HOLD REALITY",
+    "subHint": "(press and stay)"
+  },
+
+  "ship": {
+    "text": "Good enough",
+    "cupHintAlt": "target position",
+    "cupMoveAlt": "movable cup"
+  },
+
+  "header": {
+    "logo": {
+      "projectAlt": "Redacted project logo",
+      "kotarsisAlt": "kotarsis logo",
+      "languageIconAlt": "Select language"
+    }
+  },
+
+  "hero": {
+    "projectAlt": "Redacted project symbol",
+    "title": "Redacted?",
+    "subline": "An expected failure.",
+    "button": {
+      "default": "accept",
+      "hover": "accept?",
+      "accepted": "accepted"
+    },
+    "errors": [
+      "ERROR IS NOT A FAILURE",
+      "ERROR IS INFORMATION",
+      "ERROR IS A STEP"
+    ]
+  },
+
+  "denial": {
+    "title": "Everything is fine",
+    "checks": [
+      {
+        "id": "system",
+        "title": "system check",
+        "result": "System operational"
+      },
+      {
+        "id": "issues",
+        "title": "issues check",
+        "result": "No critical issues detected"
+      },
+      {
+        "id": "loading",
+        "title": "loading check",
+        "result": "Loading nominal"
+      }
+    ],
+    "outro": "All checks passed. \n (1 warning ignored)"
+  },
+
+  "anger": {
+    "title": "TAKE CONTROL",
+    "subline": "Fix everything. You know how.",
+    "button": "FIX ERROR",
+    "states": {
+      "first": "FIX IT NOW!",
+      "second": "Everything is fine",
+      "third": "What does this uncontrolled pressing give you?",
+      "fourth": "This is not fixing.\nThis is anger."
+    }
+  },
+
+  "bargaining": {
+    "title": "Almost works",
+    "subline": "What if there’s a safe way?",
+    "select": "Select what you think might help.",
+    "press": "Press apply if you believe this will change anything.",
+    "button": "apply changes",
+    "loading": "Applying selected options…",
+    "processing": "processing…",
+    "options": {
+      "enableFallback": "enable fallback",
+      "reduceLoad": "reduce load",
+      "safeMode": "safe mode",
+      "retryGently": "retry gently"
+    }
+  },
+
+  "overflow": {
+    "title": [
+      "Do you always have to try",
+      "to keep everything under control?"
+    ],
+    "square": "We want to be perfect so much.",
+    "triangle": [
+      "We squeeze",
+      "in as best",
+      "we can, even if",
+      "it's not comfortable",
+      "˚"
+    ],
+    "circle": [
+      "But, isn't it possible",
+      "to sometimes",
+      "go beyond the limits?"
+    ]
+  },
+
+  "depression": {
+    "title": "No response",
+    "text1": "no response",
+    "text2": "you don’t need to wait",
+    "text3": "still the same",
+    "text4": "this changes nothing",
+    "text5": "it doesn’t matter",
+    "text6": "no difference",
+    "text7": "this leads nowhere",
+    "text8": "nothing changes",
+    "text9": "no effect",
+    "apply": "apply changes",
+    "anger": "FIX ERROR"
+  },
+
+  "acceptance": {
+    "title": "Still functional",
+    "factsLeft": [
+      "This is acceptable",
+      "Still functional"
+    ],
+    "factsRight": [
+      "Some errors remain",
+      "No further action required"
+    ],
+    "note": [
+      "This project broke more than once.",
+      "It didn’t work as planned.",
+      "That was the point."
+    ],
+    "conclusion": {
+      "crossed": "Fixing is not removing.",
+      "underline": "Fixing is integrating."
+    },
+    "restart": "You can always return to the beginning. Nothing is final"
+  },
+
+  "footer": {
+    "title": "End of log.",
+    "author": "Author: kotarsis_art",
+    "telegram": "Telegram",
+    "support": "Support imperfection",
+    "custom": "Get a custom website",
+    "copyright": "© 2026 Redacted. Designed around error.",
+    "coffeeAlt": "Redacted coffee cup"
+  }
+}

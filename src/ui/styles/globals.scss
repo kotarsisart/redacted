@@ -1,0 +1,42 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  color: var(--snow-text);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+// /* === DEBUG MODE === */
+// * {
+//   outline: 1px solid red !important;
+//   outline-offset: -1px;
+// }
+
+// DISABLE SCROLLBAR
+::-webkit-scrollbar {
+  display: none;
+}
+
+// for firefox
+html {
+  scrollbar-width: none;
+}
+
+// for Edge
+body {
+  -ms-overflow-style: none;
+}
+
+// ELMessiri шрифт посмотреть 

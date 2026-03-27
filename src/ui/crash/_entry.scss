@@ -1,0 +1,78 @@
+@use '../styles/system/mixins' as mx;
+@use '../styles/typography/index' as tp;
+@use '../styles/tokens/spacing' as s;
+
+.entry {
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-xxl;
+  padding: s.$space-l;
+  background-color: var(--entry-bg);
+  height: 100vh;
+  
+  @include mx.mq(break-768) {
+    padding: s.$space-xxl;
+  }
+
+  &__text {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-l;
+    transition: opacity 6s ease;
+    color: var(--entry-text);
+  }
+
+  &__title {
+    @include tp.h1-crash;
+    color: var(--entry-title);
+  }
+
+  &__subline {
+    @include tp.entry-subline;
+  }
+
+  &__text {
+    @include tp.entry-text;
+  }
+
+
+  &__button {
+    @include tp.entry-button;
+    @include mx.basic-button;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 3s ease, background 0.3s ease, transform 0.3s ease;
+    
+    border-radius: var(--crash-button-radius);
+    background-color: var(--entry-button-default-bg);
+    color: var(--snow-text);
+
+    &:hover {
+      background-color: var(--entry-button-hover-bg);
+      transform: translateY(-2px);
+    }
+  }
+
+    &--text {
+    .entry__text {
+      opacity: 1;
+    }
+  }
+
+  &--fade {
+    .entry__text {
+      opacity: 0;
+    }
+  }
+
+  &--button {
+    .entry__text {
+      opacity: 0;
+    }
+
+    .entry__button {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+}

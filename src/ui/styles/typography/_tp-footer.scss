@@ -1,0 +1,43 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --footer-title-350: 24px;
+  --footer-title-768: 34px;
+
+  --footer-link-350: 18px;
+  --footer-link-768: 22px;
+
+  --footer-copyright-350: 18px;
+  --footer-copyright-768: 24px;
+}
+
+@mixin footer-title {
+  font-size: var(--footer-title-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--footer-title-768);
+  }
+}
+
+@mixin footer-link {
+  font-size: var(--footer-link-350);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  color: var(--footer-text);
+
+  @include mx.mq(break-768) {
+    font-size: var(--footer-link-768);
+  }
+}
+
+@mixin footer-copyright {
+  font-size: var(--footer-copyright-350);
+  font-weight: var(--font-weight-medium);
+
+  @include mx.mq(break-768) {
+    font-size: var(--footer-copyright-768);
+  }
+}

@@ -1,0 +1,48 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --denial-checkbox-title-350: 22px;
+  --denial-checkbox-title-768: 26px;
+
+  --denial-checkbox-result-350: 18px;
+  --denial-checkbox-result-768: 22px;
+
+  --denial-outro-350: 16px;
+  --denial-outro-768: 20px;
+  --denial-outro-1280: 24px;
+}
+
+@mixin denial-checkbox-title {
+  font-size: var(--denial-checkbox-title-350);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--denial-checkbox-title);
+
+  @include mx.mq(break-768) {
+    font-size: var(--denial-checkbox-title-768);
+  }
+}
+
+@mixin denial-checkbox-result {
+  font-size: var(--denial-checkbox-result-350);
+  font-weight: var(--font-weight-regular);
+  text-decoration: underline;
+
+  @include mx.mq(break-768) {
+    font-size: var(--denial-checkbox-result-768);
+  }
+}
+
+@mixin denial-outro {
+  font-size: var(--denial-outro-350);
+  font-weight: var(--font-weight-bold);
+  color: var(--denial-outro);
+
+  @include mx.mq(break-768) {
+    font-size: var(--denial-outro-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--denial-outro-1280);
+  }
+}

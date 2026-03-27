@@ -1,0 +1,13 @@
+// SYSTEM
+@use './globals.scss' as *;
+@use './system/variables' as *;
+@use './system/mixins' as *;
+
+// TOKENS
+@use './tokens/index' as *;
+
+// TYPOGRAPHY
+@use './typography/index' as *;
+
+// UTILS
+@use "../../utils/animations/animations.scss";

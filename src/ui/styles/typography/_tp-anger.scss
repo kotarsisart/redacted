@@ -1,0 +1,54 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --anger-subline-350: 26px;
+  --anger-subline-768: 40px;
+  --anger-subline-1280: 48px;
+
+  --anger-button-350: 28px;
+  --anger-button-768: 36px;
+
+  --anger-state-350: 24px;
+  --anger-state-768: 36px;
+  --anger-state-1280: 40px;
+}
+
+@mixin anger-subline {
+  font-size: var(--anger-subline-350);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.05em;
+  color: var(--anger-subline);
+
+  @include mx.mq(break-768) {
+    font-size: var(--anger-subline-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--anger-subline-1280);
+  }
+}
+
+@mixin anger-button {
+  font-size: var(--anger-button-350);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--snow-text);
+
+  @include mx.mq(break-768) {
+    font-size: var(--anger-button-768);
+  }
+}
+
+@mixin anger-state {
+  font-size: var(--anger-state-350);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.05em;
+  color: var(--anger-state);
+
+  @include mx.mq(break-768) {
+    font-size: var(--anger-state-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--anger-state-1280);
+  }
+}

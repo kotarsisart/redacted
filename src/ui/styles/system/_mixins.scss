@@ -1,0 +1,72 @@
+@use 'sass:map';
+@use '../system/variables' as *;
+@use '../tokens/spacing' as s;
+
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin mq($point) {
+  $size: map.get($breakpoints, $point);
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin basic-button {
+  @include centered;
+  padding-inline: s.$space-l;
+  padding-block: s.$space-m;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin main-button {
+  @include basic-button;
+  background-color: var(--button-default);
+  transition: background 0.4s ease;
+  box-shadow: var(--shadow-3d);
+
+  &:hover {
+    background-color: var(--button-hover);
+  }
+
+  &:active {
+    background-color: var(--button-clicked);
+  }
+}
+
+@mixin contrast-rgb {
+  background: linear-gradient(
+    to right,
+    #FF0000,
+    #FF9000,
+    #DEFF07,
+    #6BFF01,
+    #02FF81,
+    #00EEFF,
+    #1E00FF,
+    #9705FF,
+    #FF00EA,
+    #EE0A47
+  );
+}
+
+@mixin contrast-slider-bg {
+  background: linear-gradient(
+    to right,
+    #999999,
+    #F1EEFF,
+    #A5A5A5,
+    #767575
+  );
+}
+
+@mixin moving-button {
+  @include centered;
+  background-color: var(--moving-button-bg);
+  color: #F1EEFF;
+}

@@ -1,0 +1,77 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.anger {
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-xxl;
+  padding-inline: s.$space-m;
+  padding-block: s.$space-xxxl;
+
+  background: linear-gradient(
+    to bottom,
+    var(--anger-bg-start) 30%,
+    var(--anger-bg-middle) 50%,
+    var(--anger-bg-end) 70%,
+  );
+
+  &__title {
+    @include tp.h2;
+  }
+
+  &__subline {
+    @include tp.anger-subline;
+  }
+
+  &__button {
+    @include mx.basic-button;
+    @include tp.anger-button;
+    background: linear-gradient(
+      to bottom,
+      var(--anger-button-bg-start),
+      var(--anger-button-bg-end),
+    );
+    padding: s.$space-l;
+    padding-left: s.$space-xl;
+    border-radius: var(--main-radius);
+    box-shadow: var(--shadow-anger-button-default);
+
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: var(--shadow-anger-button-hover);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+    &.is-disabled {
+      opacity: 0.6;
+      filter: brightness(1.4);
+      cursor: default;
+    }
+  }
+
+  &__state {
+    min-height: 130px;
+    margin-top: 20px;
+    @include tp.anger-state;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    white-space: pre-line;
+    
+    &.visible {
+      opacity: 1;
+    }
+  }
+}
+
+.anger.is-broken {
+  transform: translateX(-10px) rotate(-2deg);
+  transition: transform 0.6s ease;
+
+  .anger__state {
+    color: var(--anger-state-outro);
+  }
+}

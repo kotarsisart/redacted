@@ -1,0 +1,113 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --bargaining-subline-350: 24px;
+  --bargaining-subline-768: 42px;
+  --bargaining-subline-1280: 46px;
+
+  --bargaining-select-350: 22px;
+  --bargaining-select-768: 28px;
+  --bargaining-select-1280: 32px;
+  
+  --bargaining-parameter-350: 22px;
+  --bargaining-parameter-768: 28px;
+  --bargaining-parameter-1280: 32px;
+  
+  --bargaining-button-350: 18px;
+  --bargaining-button-430: 24px;
+  
+  --bargaining-press-350: 20px;
+  --bargaining-press-768: 28px;
+  --bargaining-press-1280: 32px;
+
+  --bargaining-loading-350: 18px;
+  --bargaining-loading-768: 24px;
+
+  --bargaining-processing-350: 20px;
+  --bargaining-processing-1280: 28px;
+}
+
+@mixin bargaining-subline {
+  font-size: var(--bargaining-subline-350);
+  font-weight: var(--font-weight-medium);
+  color: var(--bargaining-subline);
+
+  @include mx.mq(break-768) {
+    font-size: var(--bargaining-subline-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--bargaining-subline-1280);
+  }
+}
+
+@mixin bargaining-select {
+  font-size: var(--bargaining-select-350);
+  font-weight: var(--font-weight-regular);
+  color: var(--bargaining-select);
+
+  @include mx.mq(break-768) {
+    font-size: var(--bargaining-select-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--bargaining-select-1280);
+  }
+}
+
+@mixin bargaining-parameter {
+  font-size: var(--bargaining-parameter-350);
+  font-weight: var(--font-weight-medium);
+  text-align: left;
+  color: var(--bargaining-checkbox-text);
+
+  @include mx.mq(break-768) {
+    font-size: var(--bargaining-parameter-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--bargaining-parameter-1280);
+  }
+}
+
+@mixin bargaining-button {
+  font-size: var(--bargaining-button-350);
+  font-weight: var(--font-weight-medium);
+
+  @include mx.mq(break-430) {
+    font-size: var(--bargaining-button-430);
+  }
+}
+
+@mixin bargaining-press {
+  font-size: var(--bargaining-press-350);
+  font-weight: var(--font-weight-light);
+  color: var(--bargaining-press);
+
+  @include mx.mq(break-768) {
+    font-size: var(--bargaining-press-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--bargaining-press-1280);
+  }
+}
+
+@mixin bargaining-loading {
+  font-size: var(--bargaining-loading-350);
+  font-weight: var(--font-weight-regular);
+  font-style: italic;
+  color: var(--bargaining-loading);
+
+  @include mx.mq(break-768) {
+    font-size: var(--bargaining-loading-768);
+  }
+}
+
+@mixin bargaining-processing {
+  font-size: var(--bargaining-processing-350);
+  font-weight: var(--font-weight-regular);
+  color: var(--bargaining-processing);
+
+  @include mx.mq(break-1280) {
+    font-size: var(--bargaining-processing-1280);
+  }
+}

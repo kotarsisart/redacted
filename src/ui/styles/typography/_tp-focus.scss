@@ -1,0 +1,29 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --focus-subline-350: 22px;
+  --focus-subline-768: 28px;
+
+  --focus-button-350: 16px;
+  --focus-button-768: 24px;
+}
+
+@mixin focus-subline {
+  font-size: var(--focus-subline-350);
+  font-weight: var(--font-weight-medium);
+
+  @include mx.mq(break-768) {
+    font-size: var(--focus-subline-768);
+  }
+}
+
+@mixin focus-button {
+  font-size: var(--focus-button-350);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-weight: var(--focus-button-768);
+  }
+}

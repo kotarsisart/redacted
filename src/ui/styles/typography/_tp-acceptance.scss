@@ -1,0 +1,60 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --acceptance-facts-350: 24px;
+  --acceptance-facts-768: 36px;
+  
+  --acceptance-note-350: 20px;
+  --acceptance-note-768: 28px;
+
+  --acceptance-fixing-350: 16px;  
+  --acceptance-fixing-768: 24px;
+
+  --acceptance-restart-350: 14px;  
+  --acceptance-restart-768: 24px;
+}
+
+@mixin acceptance-facts {
+  font-size: var(--acceptance-facts-350);
+  font-weight: var(--font-weight-bold);
+  color: var(--acceptance-facts);
+
+  @include mx.mq(break-768) {
+    font-size: var(--acceptance-facts-768);
+  }
+}
+
+@mixin acceptance-note {
+  font-size: var(--acceptance-note-350);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.05em;
+  color: var(--acceptance-note-text);
+
+  @include mx.mq(break-768) {
+    font-size: var(--acceptance-note-768);
+  }
+}
+
+@mixin acceptance-fixing {
+  font-size: var(--acceptance-fixing-350);
+  font-weight: var(--font-weight-medium);
+
+  @include mx.mq(break-768) {
+    font-size: var(--acceptance-fixing-768);
+  }
+}
+
+@mixin acceptance-restart {
+  font-size: var(--acceptance-restart-350);
+  font-weight: var(--font-weight-medium);
+  color: var(--acceptance-restart);
+  text-decoration: none;
+  // cursor: alias;
+  cursor: progress;
+
+  @include mx.mq(break-768) {
+    font-size: var(--acceptance-restart-768);
+  }
+}

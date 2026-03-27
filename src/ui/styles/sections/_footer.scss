@@ -1,0 +1,114 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.footer {
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-l;
+  padding-inline: s.$space-m;
+  padding-block: s.$space-xxl;
+  background: linear-gradient(to right,
+    var(--footer-bg-start),
+    var(--footer-bg-end)
+  );
+
+  color: var(--footer-text);
+
+  &__title {
+    @include tp.footer-title;
+  }
+
+  &__links {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: s.$space-m;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-l;
+    }
+    @include mx.mq(break-1280) {
+      gap: s.$space-xl;
+    }
+  }
+
+  &__link {
+    @include tp.footer-link;
+    transition: transform ease 0.3s;
+
+    &:hover {
+      transform: scale(1.05)
+    }
+  }
+
+  &__bmac {
+    @include mx.centered;
+    flex-direction: row;
+    gap: s.$space-s;
+    text-decoration: none;
+    flex-shrink: 0; 
+
+    &:hover {
+      .footer__bmac-icon {
+        animation: cup-breathe infinite 1s ease;
+        transform-origin: center bottom;
+      }
+    }
+
+    &-icon {
+      height: 35px;
+
+      @include mx.mq(break-768) {
+        height: 45px;
+      }
+    }
+  }
+
+  &__copyright {
+    @include tp.footer-copyright;
+  }
+}
+
+@keyframes cup-breathe {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.02); }
+  50%  { transform: scale(1.02); }
+  75%  { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+// @keyframes cup-idle-tilt {
+//   0% { transform: rotate(0deg); }
+//   50% { transform: rotate(0.6deg); }
+//   100% { transform: rotate(0deg); }
+// }
+
+// @keyframes cup-steam-shake {
+//   0%   { transform: translateY(0) rotate(0deg);   }
+//   20%  { transform: translateY(-1.5px) rotate(-1deg); }
+//   40%  { transform: translateY(1px) rotate(1.2deg); }
+//   60%  { transform: translateY(-0.5px) rotate(-0.8deg); }
+//   80%  { transform: translateY(0.5px) rotate(0.6deg); }
+//   100% { transform: translateY(0) rotate(0deg); }
+// }
+
+// @keyframes cup-presence {
+//   0%   { transform: translateY(0); }
+//   50%  { transform: translateY(1.5px); }
+//   100% { transform: translateY(0); }
+// }
+
+// @keyframes cup-touch {
+//   0%   { transform: translateY(0); }
+//   30%  { transform: translateY(1px); }
+//   60%  { transform: translateY(0.5px); }
+//   100% { transform: translateY(0); }
+// }
+
+// @keyframes cup-fade-presence {
+//   // animation: cup-fade-presence infinite 0.4s ease; чисто гирлянда
+//   0%   { opacity: 1; }
+//   50%  { opacity: 0.75; }
+//   100% { opacity: 1; }
+// }

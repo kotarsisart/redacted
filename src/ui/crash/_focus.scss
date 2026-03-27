@@ -1,0 +1,61 @@
+@use '../styles/system/mixins' as mx;
+@use '../styles/typography/index' as tp;
+@use '../styles/tokens/spacing' as s;
+
+.focus {
+  width: 100vw;
+  height: 100vh;
+  background: var(--crash-section-bg);
+  overflow: hidden;
+  padding-inline: s.$space-s;
+  padding-block: s.$space-xxl;
+
+  @include mx.mq(break-1024) {
+    padding: s.$space-xxl;
+  }
+
+  &__hint {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-m;
+  }
+
+  &__title {
+    @include tp.h2-crash;
+  }
+
+  &__subline {
+    @include tp.focus-subline;
+  }
+
+  &__board {
+    width: 100%;
+    height: 85%;
+    padding-block: s.$space-m;
+  }
+
+  &__button {
+    @include mx.basic-button;
+    @include tp.focus-button;
+    position: absolute;
+    padding: 12px;
+
+    font-weight: var(--font-weight-bold);
+
+    background-color: var(--focus-button-bg);
+    color: var(--snow-text);
+    box-shadow: var(--focus-button-shadow);
+    border-radius: var(--main-radius);
+
+    @include mx.mq(break-768) {
+      padding: s.$space-m;
+    }
+    @include mx.mq(break-1024) {
+      padding: s.$space-l;
+    }
+
+    &.is-correct {
+      // background: #afa0a0;
+    }
+  }
+}

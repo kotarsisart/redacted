@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+
+  <url>
+    <loc>https://kotarsis.com/redacted/en</loc>
+
+    <!-- Default -->
+    <xhtml:link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://kotarsis.com/redacted/en"
+    />
+
+    <!-- Languages -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://kotarsis.com/redacted/en" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://kotarsis.com/redacted/pl" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kotarsis.com/redacted/uk" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kotarsis.com/redacted/ru" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://kotarsis.com/redacted/be" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kotarsis.com/redacted/bg" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://kotarsis.com/redacted/mk" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://kotarsis.com/redacted/sr" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://kotarsis.com/redacted/hr" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://kotarsis.com/redacted/sk" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://kotarsis.com/redacted/sl" />
+
+    <!-- Crawling hints -->
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+</urlset>

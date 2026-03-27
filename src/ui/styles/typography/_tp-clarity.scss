@@ -1,0 +1,19 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --clarity-hint-350: 20px;
+  --clarity-hint-768: 36px;
+}
+
+@mixin clarity-hint {
+  font-size: var(--clarity-hint-350);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.05em;
+  color: var(--clarity-hint);
+
+  @include mx.mq(break-768) {
+    font-size: var(--clarity-hint-768);
+  }
+}

@@ -1,0 +1,169 @@
+:root {
+  // MAIN
+  --snow-text: #F1EEFF;
+  --section-title-text: #D40000;
+  --section-title-shadow: #4B0A0A;
+  --crash-section-bg: #010101;
+
+  // PRELOADER
+  --preloader-text: #CA0303;
+  --preloader-bg: #0A1158;
+
+  --preloader-divider-glow-color: #3146ffd0;
+
+  --preloader-project-bg: #CA0000;
+
+  // ENTRY
+  --entry-bg: #FAFAFA;
+  --entry-text: #0A146B;
+  --entry-title: #FF0000;
+
+  --entry-button-default-bg: #0C1677;
+  --entry-button-hover-bg: #0C1998;
+
+  // CONTRAST
+  --contrast-bg: #5A5A5A;
+  --contrast-title: #D9D9D9;
+  --contrast-subline: #A7A7A7;
+  
+  --contrast-button-default-bg: #11007D;
+  --contrast-button-hover-bg: #0F1EAF;
+  
+  --contrast-regulator-bg: #707070;
+
+  // FOCUS
+  --focus-button-bg: #F40202;
+  
+  // CLARITY 
+  --clarity-title: #00aaff;
+  --clarity-hint: #7cafc8;
+
+  // SHIP 
+  --ship-title: #FFD138;
+
+  // LANG PAGE
+  --lang-page-text: #00CCFF;
+  --lang-page-bg: #0B125B;
+
+
+  // HEADER 
+  --header-bg: #040830;
+  --header-containers: #D10000;
+
+  // HERO
+  --hero-bg-start: #060B3B;
+  --hero-bg-middle: #010639;
+  --hero-bg-end: #08105F;
+  
+  --hero-project-bg: #1253D4;
+
+  --hero-title: #F90000;
+  --hero-subline: #811212;
+  
+  --hero-errors-second: #B6B5CE;
+  --hero-errors-third: #7C7D9D;
+
+  --hero-button-default-bg: #DD0606;
+
+  --hero-button-hover-bg: #F1EEFF;
+  --hero-button-hover-text: #DD0606;
+
+  --hero-button-activated-bg: #2EFF66;
+  --hero-button-activated-text: #0062ff;
+
+  // DENIAL
+  --denial-bg-start: #08105F;
+  --denial-bg-middle: #070F57;
+  --denial-bg-end: #010420;
+  --denial-title: #F0060A;
+  --denial-outro: #41479B;
+
+  --denial-checkbox-title: #F80F0F;
+  --denial-checkbox-percent: #441CFF;
+  --denial-checkbox-result: #12EB33;
+
+  
+  --denial-checkbox-progress-bg: #2EAEA3;
+  --denial-checkbox-progress-fill: #22FFED;
+  --denial-checkbox-progress-border: #01A8EF;
+
+  // ANGER
+  --anger-bg-start: #010420;
+  --anger-bg-middle: #720000;
+  --anger-bg-end: #060B3B;
+
+  --anger-button-bg-start: #8E0101;
+  --anger-button-bg-end: #F40202;
+  --anger-button-shadow-default: #000000bf;
+  --anger-button-shadow-hover: #000000;
+
+  --anger-subline: #FFF83B;
+  --anger-state-outro: #868893;
+
+  // BARGAINING
+  --bargaining-bg-start: #060B3B;
+  --bargaining-bg-middle: #17112D;
+  --bargaining-bg-end: #242B71;
+
+  --bargaining-subline: #3B82FF;
+  --bargaining-select: #6FA8FF;
+  --bargaining-press: #B8CFFF;
+  --bargaining-loading: #4286DC;
+
+  --bargaining-checkbox-text: #5FDCFF;
+  --bargaining-checkbox-bg-start: #08BAEB;
+  --bargaining-checkbox-bg-end: #0049DB;
+
+  --bargaining-checkbox-border: #25FBFF;
+  
+  --bargaining-button-default-bg: #84ADF8;
+  --bargaining-button-default-text: #C1D1FC;
+
+  --bargaining-button-ready-bg: #659AFB;
+  --bargaining-button-ready-text: #E3E6FF;
+  
+  --bargaining-button-hover-bg: #1C6AF9;
+  
+  --bargaining-button-activated-bg: #0039a2;
+  --bargaining-button-activated-text: #FFFFFF;
+
+  --bargaining-progress-bg: #3E78E5;
+  --bargaining-progress-fill: #0D46AF;
+
+
+  // OVERFLOW
+  --overflow-bg-start: #242B71;
+  --overflow-bg-middle: #0B0F39;
+  --overflow-bg-end: #240303;
+
+  --overflow-title: #FB3336;
+
+  --overflow-figure-bg: #4852DC;
+  --overflow-figure-border: #7370FD;
+
+  // DEPRESSION
+  --depression-bg-start: #240303;
+  --depression-bg-middle: #160202;
+  --depression-bg-end: #170867;
+  --depression-text: #B2A9D8;
+
+  // ACCEPTANCE
+  --acceptance-bg-start: #170867;
+  --acceptance-bg-middle: #0A1144;
+  --acceptance-bg-end: #170404;
+  
+  --acceptance-note-bg: #3D6BF5;
+  --acceptance-note-border: #83A1FC;
+
+  --acceptance-facts: #3576E6;
+  --acceptance-note-text: #92F7ED;
+  --acceptance-removing: #4081C4;
+  --acceptance-integrating: #4B9EEC;
+  --acceptance-restart: #333C6D;
+
+  // FOOTER 
+  --footer-bg-start: #020526;
+  --footer-bg-end: #060D47;
+
+  --footer-text: #886FFB;
+}

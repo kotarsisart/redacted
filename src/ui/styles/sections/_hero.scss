@@ -1,0 +1,137 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.hero {
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-xxxl;
+  padding-block: s.$space-xxl;
+  padding-inline: s.$space-l;
+  min-height: 90vh;
+  background: linear-gradient(
+    to bottom,
+    var(--hero-bg-start),
+    var(--hero-bg-middle),
+    var(--hero-bg-end)
+  );
+
+  @include mx.mq(break-768) {
+    padding-block: s.$space-xxxl;
+    padding-inline: s.$space-xxl;
+  }
+
+  &__project {
+    @include mx.centered;
+    padding: s.$space-m;
+    background-color: var(--hero-project-bg);
+    border-radius: var(--hero-project-radius);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+
+    &-icon {
+      width: var(--hero-project-width-350);
+
+      @include mx.mq(break-768) {
+        width: var(--hero-project-width-768);
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: s.$space-xl;
+
+    @include mx.mq(break-1024) {
+      flex-direction: row;
+    }
+  }
+
+  &__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: s.$space-l;
+    text-align: left;
+  }
+
+  &__title {
+    @include tp.h1;
+
+  }
+
+  &__subline {
+    @include tp.hero-subline;
+  }
+
+  &__button {
+    @include mx.basic-button;
+    @include tp.hero-button;
+
+    border-radius: var(--main-radius);
+
+    background-color: var(--hero-button-default-bg);
+    color: var(--hero-button-default-text);
+
+    transition: all 0.2s ease;
+
+    white-space: nowrap;
+
+    &:hover:not(.is-active) {
+      background-color: var(--hero-button-hover-bg);
+      color: var(--hero-button-hover-text);
+      padding-inline: 28px;
+    }
+
+    &.is-active {
+      transition: all 0.4s ease;
+      background-color: var(--hero-button-activated-bg);
+      color: var(--hero-button-activated-text);
+      cursor: default;
+      padding-inline: 32px;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: s.$space-xxl;
+    text-align: left;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-xxxl;
+    }
+    @include mx.mq(break-1024) {
+      @include mx.centered;
+    }
+  }
+
+  &__errors {
+    @include tp.hero-errors;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.06);
+    }
+  }
+
+  &__errors--1 {
+    color: var(--hero-errors-second);
+  }
+
+  &__errors--2 {
+    color: var(--hero-errors-third);
+  }
+}

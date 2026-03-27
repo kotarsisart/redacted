@@ -1,0 +1,53 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --hero-subline-350: 28px;
+  --hero-subline-768: 38px;
+  --hero-subline-1280: 46px;
+
+  --hero-errors-350: 20px;
+  --hero-errors-768: 28px;
+  --hero-errors-1280: 32px;
+
+  --hero-button-350: 20px;
+  --hero-button-768: 26px;
+}
+
+@mixin hero-subline {
+  font-size: var(--hero-subline-350);
+  font-weight: var(--font-weight-bold);
+  color: var(--hero-subline);
+  cursor: context-menu;
+  cursor: n-resize;
+
+  @include mx.mq(break-768) {
+    font-size: var(--hero-subline-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--hero-subline-1280);
+  }
+}
+
+@mixin hero-errors {
+  font-size: var(--hero-errors-350);
+  font-weight: var(--font-weight-medium);
+  cursor: s-resize;
+
+  @include mx.mq(break-768) {
+    font-size: var(--hero-errors-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--hero-errors-1280);
+  }
+}
+
+@mixin hero-button {
+  font-size: var(--hero-button-350);
+  font-weight: var(--font-weight-extrabold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--hero-button-768);
+  }
+}

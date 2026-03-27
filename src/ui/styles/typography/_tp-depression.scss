@@ -1,0 +1,21 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --depression-responses-350: 20px;
+  --depression-responses-768: 30px;
+  --depression-responses-1280: 36px;
+}
+
+@mixin depression-responses {
+  font-size: var(--depression-responses-350);
+  color: var(--depression-text);
+
+  @include mx.mq(break-768) {
+    font-size: var(--depression-responses-768);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--depression-responses-1280);
+  }
+}

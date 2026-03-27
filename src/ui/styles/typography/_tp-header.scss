@@ -1,0 +1,12 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --header-lang-select-768: 20px;
+}
+
+@mixin header-lang-select {
+  font-size: var(--header-lang-select-768);
+  font-weight: var(--font-weight-medium);
+}

@@ -1,0 +1,115 @@
+@use '../styles/system/mixins' as mx;
+@use '../styles/typography/index' as tp;
+@use '../styles/tokens/spacing' as s;
+
+.contrast {
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-l;
+  padding-inline: s.$space-m;
+  min-height: 100vh;
+  transition: filter 0.25s ease;
+  background-color: #5A5A5A;
+
+  &__title {
+    @include tp.h2-crash;
+    color: var(--contrast-title);
+  }
+
+  &__text {
+    @include tp.contrast-subline;
+  }
+
+  &__rgb {
+    @include mx.contrast-rgb;
+    width: 100%;
+    max-width: 400px;
+    height: 30px;
+    border-radius: 20px;
+
+    @include mx.mq(break-768) {
+      height: 50px;
+      max-width: 800px;
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &__button {
+    @include mx.basic-button;
+    @include tp.contrast-button;
+    background: var(--contrast-button-default-bg);
+    border-radius: var(--main-radius);
+
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease,
+      background 0.2s ease;
+
+    opacity: 0;
+    transform: translateY(24px);
+    pointer-events: none;
+
+    &--visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  
+    &:hover {
+      background: var(--contrast-button-hover-bg);
+      transform: translateY(-1px);
+    }
+  }
+}
+
+.contrast-slider {
+  --track-height: 24px;
+  --thumb-size: 28px;
+
+  @include mx.contrast-slider-bg;
+  appearance: none;
+  width: 100%;
+  max-width: 350px;
+  height: var(--track-height);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  @include mx.mq(break-768) {
+    max-width: 500px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.contrast-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  background: #707070;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.contrast-slider:hover::-webkit-slider-thumb {
+  transform: scale(1.1);
+}
+
+.contrast-slider::-moz-range-thumb {
+  width: var(--thumb-size);
+  height: var(--thumb-size);
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  box-shadow:
+    0 0 0 4px rgba(255,255,255,0.15),
+    0 8px 20px rgba(0,0,0,0.4);
+}

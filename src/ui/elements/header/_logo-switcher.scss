@@ -1,0 +1,57 @@
+@use '../../styles/system/mixins' as mx;
+
+.kts-logo {
+  display: grid;
+  align-items: center;
+  height: 90%;
+}
+
+.kts-logo__version {
+  grid-area: 1 / 1;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.kts-logo__version--main {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+
+.kts-logo__version--alt {
+  opacity: 0;
+  transform: scale(0.94);
+  z-index: 1;
+}
+
+.kts-logo:hover .kts-logo__version--main {
+  opacity: 0;
+}
+
+.kts-logo:hover .kts-logo__version--alt {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* responsive swap */
+
+.kts-logo__img {
+  display: none;
+  height: 100%;
+  width: auto;
+}
+
+.kts-logo__img--short {
+  display: block;
+}
+
+@include mx.mq(break-768) {
+  .kts-logo__img--short {
+    display: none;
+  }
+
+  .kts-logo__img--long {
+    display: block;
+  }
+}
